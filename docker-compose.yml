@@ -5,6 +5,8 @@ services:
         build:
             context: .
             dockerfile: ./jenkins/Dockerfile
+        environment:
+            JENKINS_OPTS: '--prefix=/jenkins'
         ports:
             - 80:8080
             - 50000:50000
