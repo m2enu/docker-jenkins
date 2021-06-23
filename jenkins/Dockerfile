@@ -1,4 +1,4 @@
-FROM jenkins/jenkins:2.263.2-lts-slim
+FROM jenkins/jenkins:2.289.1-lts-slim
 
 USER root
 RUN apt-get update -y
