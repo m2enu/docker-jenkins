@@ -1,0 +1,6 @@
+configuration-as-code:latest
+subversion:latest
+matrix-auth:latest
+role-strategy:latest
+warnings-ng:latest
+windows-slaves:latest
