@@ -7,9 +7,8 @@ services:
             dockerfile: ./jenkins/Dockerfile
         environment:
             - JAVA_OPTS=-Duser.timezone=Asia/Tokyo
-            - JENKINS_OPTS=--prefix=/jenkins
         ports:
-            - 80:8080
+            - 8080:8080
             - 50000:50000
         volumes:
             - jenkins_master_data:/var/jenkins_home
