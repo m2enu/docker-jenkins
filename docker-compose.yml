@@ -1,16 +1,14 @@
 version: "3"
 services:
-    jenkins_master:
+    app:
         container_name: master
         build:
             context: .
             dockerfile: ./jenkins/Dockerfile
-        environment:
-            - JAVA_OPTS=-Duser.timezone=Asia/Tokyo
         ports:
             - 8080:8080
             - 50000:50000
         volumes:
-            - jenkins_master_data:/var/jenkins_home
+            - master_data:/var/jenkins_home
 volumes:
-    jenkins_master_data:
+    master_data:
